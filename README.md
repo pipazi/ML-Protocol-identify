@@ -45,3 +45,5 @@ echo 'getFunctionsByName("GetAoutBuffer").id' | joern-lookup -g | tail -n 1 | jo
 dot -Tsvg slice.dot -o slice.svg
 joern-list-funcs
 
+# RNNLM
+http://www.fit.vutbr.cz/~imikolov/rnnlm/FAQ.txt
