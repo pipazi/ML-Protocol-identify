@@ -1,5 +1,4 @@
 # Install Joern
-
 Joern install on Ubuntu 14.04
 a. Install JAVA 7
 https://www.atlantic.net/community/howto/install-java-ubuntu-14-04/
@@ -20,15 +19,12 @@ https://github.com/octopus-platform/joern/issues/105
 Sudo pip install py2neo==2.0.9
 
 # Neo4j
-
 Neo4j Problems:
 https://github.com/fabsx00/python-joern/issues/14
 source code of old version of neo4j:
 https://neo4j.com/artifact.php?name=neo4j-community-2.1.8-unix.tar.gz
 neo4j usage:
 neo4j { console | start | start-no-wait | stop | restart | status | info }
-
-
 
 
 # System Setup
