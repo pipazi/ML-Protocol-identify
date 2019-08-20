@@ -1,0 +1,40 @@
+a. install  frama-c via opam
+
+1. apt install opam
+2. opam ini
+3. opam install depext
+4. opam depext frama-c
+5. opam install frama-c
+6. eval $(opam config env)
+
+
+b. problems:
+slevel: https://stackoverflow.com/questions/28717724/slevel-option-in-value-analysis-of-framac
+cannot start: https://stackoverflow.com/questions/17117102/analyzing-large-projects-with-frama-c
+
+
+
+c. example:
+1. basic example: https://frama-c.com/try_out.html
+
+2. graph: https://stackoverflow.com/questions/9804591/which-free-tools-can-i-use-to-generate-the-program-dependence-graph-for-c-codes
+
+3. wp: https://frama-c.com/wp.html
+-wp-proof is not avaliable
+
+4. slicing:
+https://frama-c.com/slicing.html
+https://stackoverflow.com/questions/28588014/frama-c-slice-parallelizable-loop
+https://stackoverflow.com/questions/36618552/slicing-for-multiple-asserts
+http://www.mupuf.org/blog/2014/02/10/a_return_into_the_world_of_frama-c/
+
+frama-c -slice-assert main -slice-pragma main slice.c -print -ocode out.c
+
+https://lists.gforge.inria.fr/pipermail/frama-c-discuss/2010-March/001841.html
+frama-c -slice-print -slice-wr Variable -slice-rd Variable file.c
+
+5. openssl related:
+https://stackoverflow.com/questions/40074611/generating-pdgs-of-openssl-c-source-for-analysis
+https://stackoverflow.com/questions/38107892/frama-c-slice-choosing-an-entry-to-get-pragma-ctrl
+
+frama-c ./ssl/s23_clnt.c -main ssl23_client_hello -slice-pragma ssl23_client_hello -cpp-command "gcc -C -E -I ./include/ -I ./" -then-on 'Slicing export' -print -ocode output.c
