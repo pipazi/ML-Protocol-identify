@@ -47,3 +47,11 @@ joern-list-funcs
 
 # RNNLM
 http://www.fit.vutbr.cz/~imikolov/rnnlm/FAQ.txt
+
+# Other
+CoAP
+http://coap.technology/
+
+MQTT
+MQTT Protocol: https://mosquitto.org/
+Packet Structure: http://www.steves-internet-guide.com/mqtt-protocol-messages-overview/
