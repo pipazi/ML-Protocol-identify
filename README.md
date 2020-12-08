@@ -24,6 +24,7 @@ https://www.exakat.io/install-gremlin-on-neo4j-2-2/
 The license header check can be skippedby appending the following to the command line:-Dlicense.skip=true
 
 https://stackoverflow.com/questions/22848416/build-of-neo4j-community-is-failing-why/22848853?noredirect=1#22848853
+
 * Py2neo
 
 https://github.com/octopus-platform/joern/issues/34
@@ -67,11 +68,11 @@ joern-list-funcs
 http://www.fit.vutbr.cz/~imikolov/rnnlm/FAQ.txt
 
 # Other
-CoAP
+* CoAP
 
 http://coap.technology/
 
-MQTT
+* MQTT
 
 MQTT Protocol: https://mosquitto.org/
 
